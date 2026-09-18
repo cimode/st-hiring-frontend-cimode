@@ -1,8 +1,10 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import eventsReducer from '../features/events/eventsSlice'
+import settingsReducer from '../features/settings/settingsSlice'
 
 const rootReducer = combineReducers({
   events: eventsReducer,
+  settings: settingsReducer,
 })
 
 export type RootState = ReturnType<typeof rootReducer>
